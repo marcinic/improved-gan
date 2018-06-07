@@ -226,7 +226,7 @@ class DCGAN(object):
             self.saver.restore(self.sess, os.path.join(checkpoint_dir, ckpt_name))
             return True
         else:
-            print "Bad checkpoint: ", ckpt
+            print("Bad checkpoint: {0}".format(ckpt))
             return False
 
 
